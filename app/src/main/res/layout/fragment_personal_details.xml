@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalDetails">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="162dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="11dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="11dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/personaldetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardElevation="8dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ed2d28"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Personal Information"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Name        :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.046"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="19dp"
+                            android:layout_marginTop="16dp"
+                            android:maxLines="3"
+                            android:text=" "
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/textView"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Course     :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView2"
+                            app:layout_constraintTop_toBottomOf="@+id/branch" />
+
+                        <TextView
+                            android:id="@+id/course"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:maxLines="3"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView1"
+                            app:layout_constraintEnd_toEndOf="@+id/branch"
+                            app:layout_constraintStart_toStartOf="@+id/branch" />
+
+                        <TextView
+                            android:id="@+id/branch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/name" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Branch      :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView"
+                            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Year          :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView1"
+                            app:layout_constraintTop_toBottomOf="@+id/course" />
+
+                        <TextView
+                            android:id="@+id/year"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:maxLines="3"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+                            app:layout_constraintEnd_toEndOf="@+id/name"
+                            app:layout_constraintStart_toStartOf="@+id/name" />
+
+                        <TextView
+                            android:id="@+id/semester"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView5"
+                            app:layout_constraintEnd_toEndOf="@+id/name"
+                            app:layout_constraintStart_toStartOf="@+id/name" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Semester :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView1"
+                            app:layout_constraintTop_toBottomOf="@+id/year" />
+
+                        <TextView
+                            android:id="@+id/section"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+                            app:layout_constraintEnd_toEndOf="@+id/name"
+                            app:layout_constraintStart_toStartOf="@+id/name" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Section     :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView5"
+                            app:layout_constraintTop_toBottomOf="@+id/semester" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Gender     :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView5"
+                            app:layout_constraintTop_toBottomOf="@+id/section" />
+
+                        <TextView
+                            android:id="@+id/gender"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/name" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="DOB          :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView8"
+                            app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+                        <TextView
+                            android:id="@+id/dob"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView10"
+                            app:layout_constraintEnd_toEndOf="@+id/gender"
+                            app:layout_constraintStart_toStartOf="@+id/gender" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Religion    :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView8"
+                            app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+                        <TextView
+                            android:id="@+id/religion"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+                            app:layout_constraintEnd_toEndOf="@+id/name"
+                            app:layout_constraintStart_toStartOf="@+id/name" />
+
+                        <TextView
+                            android:id="@+id/phno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView17"
+                            app:layout_constraintEnd_toEndOf="@+id/name"
+                            app:layout_constraintStart_toStartOf="@+id/name" />
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Phone no. :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView12"
+                            app:layout_constraintTop_toBottomOf="@+id/religion" />
+
+                        <TextView
+                            android:id="@+id/gmail"
+                            android:layout_width="0dp"
+                            android:layout_height="23dp"
+                            android:maxLines="3"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView19"
+                            app:layout_constraintEnd_toEndOf="@+id/name"
+                            app:layout_constraintStart_toStartOf="@+id/name" />
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Email         :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView12"
+                            app:layout_constraintTop_toBottomOf="@+id/phno" />
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Address    :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView19"
+                            app:layout_constraintTop_toBottomOf="@+id/gmail" />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="0dp"
+                            android:layout_height="87dp"
+                            android:layout_marginTop="8dp"
+                            android:maxLines="10"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintEnd_toEndOf="@+id/name"
+                            app:layout_constraintStart_toStartOf="@+id/name"
+                            app:layout_constraintTop_toBottomOf="@+id/gmail" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/white"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/address" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tenthdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardElevation="8dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/personaldetails">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ed2d28"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tenth Standard"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout2">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Marks                  :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.046"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/sscmarks"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:maxLines="3"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/textView13" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="SSC Type            :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView13"
+                            app:layout_constraintTop_toBottomOf="@+id/sscmarks" />
+
+                        <TextView
+                            android:id="@+id/ssctype"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintEnd_toEndOf="@+id/sscmarks"
+                            app:layout_constraintStart_toStartOf="@+id/sscmarks"
+                            app:layout_constraintTop_toBottomOf="@+id/sscmarks" />
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Year Of Passing :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/textView14"
+                            app:layout_constraintTop_toBottomOf="@id/ssctype" />
+
+                        <TextView
+                            android:id="@+id/sscyearpassing"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
+                            app:layout_constraintEnd_toEndOf="@+id/ssctype"
+                            app:layout_constraintStart_toStartOf="@+id/ssctype" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="School Name      :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@id/textView15"
+                            app:layout_constraintTop_toBottomOf="@id/sscyearpassing" />
+
+                        <TextView
+                            android:id="@+id/schoolname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:maxLines="3"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+                            app:layout_constraintEnd_toEndOf="@+id/sscyearpassing"
+                            app:layout_constraintStart_toStartOf="@+id/sscyearpassing" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="School Location   :"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView6"
+                            app:layout_constraintTop_toBottomOf="@+id/schoolname" />
+
+                        <TextView
+                            android:id="@+id/schoollocation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:maxLines="5"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/schoolname"
+                            app:layout_constraintTop_toBottomOf="@id/schoolname" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/white"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/schoollocation" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/interdetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardElevation="8dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline2"
+                app:layout_constraintStart_toEndOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/tenthdetails">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ed2d28"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Intermediate"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout3">
+
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Marks             :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/intermarks"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="34dp"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.264"
+                            app:layout_constraintStart_toEndOf="@+id/textView16" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Inter Type :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView16"
+                            app:layout_constraintTop_toBottomOf="@+id/intermarks" />
+
+                        <TextView
+                            android:id="@+id/intertype"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView21"
+                            app:layout_constraintEnd_toEndOf="@+id/intermarks"
+                            app:layout_constraintStart_toStartOf="@+id/intermarks" />
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Year of passing :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView21"
+                            app:layout_constraintTop_toBottomOf="@+id/intertype" />
+
+                        <TextView
+                            android:id="@+id/interyearpassing"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView23"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/intermarks" />
+
+                        <TextView
+                            android:id="@+id/textView25"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="College Name :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView23"
+                            app:layout_constraintTop_toBottomOf="@+id/interyearpassing" />
+
+                        <TextView
+                            android:id="@+id/intername"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:maxLines="4"
+                            android:text=" "
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView25"
+                            app:layout_constraintEnd_toEndOf="@+id/intermarks"
+                            app:layout_constraintStart_toStartOf="@+id/intermarks" />
+
+                        <TextView
+                            android:id="@+id/textView29"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="College Location :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView25"
+                            app:layout_constraintTop_toBottomOf="@+id/intername" />
+
+                        <TextView
+                            android:id="@+id/interlocation"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:maxLines="4"
+                            android:text=" "
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/intermarks"
+                            app:layout_constraintTop_toBottomOf="@id/intername" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_marginStart="16dp"
+                            android:background="@color/white"
+                            android:layout_marginTop="15dp"
+                            app:layout_constraintTop_toBottomOf="@+id/interlocation"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="-47dp" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/entrancetestdetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardElevation="8dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline2"
+                app:layout_constraintStart_toEndOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/interdetails">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ed2d28"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Entrance Test"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/constraintLayout4">
+
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Entrance Test :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/entrancetestno"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="55dp"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView31"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.199"
+                            app:layout_constraintStart_toEndOf="@+id/textView31" />
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Entrance Test Rank :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView31"
+                            app:layout_constraintTop_toBottomOf="@+id/entrancetestno" />
+
+                        <TextView
+                            android:id="@+id/entrancetestrank"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="18dp"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView33"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView33" />
+
+                        <TextView
+                            android:id="@+id/textView35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Entrance test marks :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView33"
+                            app:layout_constraintTop_toBottomOf="@+id/entrancetestrank" />
+
+                        <TextView
+                            android:id="@+id/entrancetestmarks"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="14dp"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView35"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView35" />
+
+                        <TextView
+                            android:id="@+id/textView37"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="Seat Category :"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="@+id/textView35"
+                            app:layout_constraintTop_toBottomOf="@+id/entrancetestmarks" />
+
+                        <TextView
+                            android:id="@+id/seatcategory"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="55dp"
+                            android:text=" "
+                            android:textSize="15dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/textView37"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView37" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="@color/white"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/seatcategory" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/familydetails"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:cardElevation="8dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline2"
+                app:layout_constraintStart_toEndOf="@id/guideline1"
+                app:layout_constraintTop_toBottomOf="@id/entrancetestdetails">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ed2d28"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Family Details"
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Father Name               :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+                    <TextView
+                        android:id="@+id/fname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:maxLines="5"
+                        android:text=" "
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Father Occupation :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView4"
+                        app:layout_constraintTop_toBottomOf="@+id/fname" />
+
+                    <TextView
+                        android:id="@+id/foccupation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="48dp"
+                        android:maxLines="5"
+                        android:text=" "
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView18"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView18" />
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Father Education Status :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView18"
+                        app:layout_constraintTop_toBottomOf="@+id/foccupation" />
+
+                    <TextView
+                        android:id="@+id/fedustatus"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:maxLines="5"
+                        android:text=" "
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView24" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Mother Name :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView24"
+                        app:layout_constraintTop_toBottomOf="@+id/fedustatus" />
+
+                    <TextView
+                        android:id="@+id/mname"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="80dp"
+                        android:maxLines="5"
+                        android:text=" "
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView28"
+                        app:layout_constraintStart_toEndOf="@+id/textView28" />
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Mother Occupation :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView28"
+                        app:layout_constraintTop_toBottomOf="@+id/mname" />
+
+                    <TextView
+                        android:id="@+id/moccupation"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"                        android:layout_height="wrap_content"
+                        android:layout_marginStart="44dp"
+                        android:text=" "
+                        android:maxLines="5"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView34"
+                        app:layout_constraintStart_toEndOf="@+id/textView34" />
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Mother Education Status :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView34"
+                        app:layout_constraintTop_toBottomOf="@+id/moccupation" />
+
+                    <TextView
+                        android:id="@+id/medustatus"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text=" "
+                        android:maxLines="5"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView40"
+                        app:layout_constraintStart_toEndOf="@+id/textView40" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Mother Tongue :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView40"
+                        app:layout_constraintTop_toBottomOf="@+id/medustatus" />
+
+                    <TextView
+                        android:id="@+id/mothertongue"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"                        android:layout_height="wrap_content"
+                        android:layout_marginStart="68dp"
+                        android:text=" "
+                        android:maxLines="5"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView42"
+                        app:layout_constraintStart_toEndOf="@+id/textView42" />
+
+                    <TextView
+                        android:id="@+id/textView44"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Annual Income :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:maxLines="5"
+                        app:layout_constraintStart_toStartOf="@+id/textView42"
+                        app:layout_constraintTop_toBottomOf="@+id/mothertongue" />
+
+                    <TextView
+                        android:id="@+id/textView45"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Vignan Employee Known :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView46"
+                        app:layout_constraintTop_toBottomOf="@+id/familystatus" />
+
+                    <TextView
+                        android:id="@+id/textView46"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Family Status :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView44"
+                        app:layout_constraintTop_toBottomOf="@+id/annualincome" />
+
+                    <TextView
+                        android:id="@+id/textView47"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Caste :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView48"
+                        app:layout_constraintTop_toBottomOf="@+id/employeename" />
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Employee Name :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView45"
+                        app:layout_constraintTop_toBottomOf="@+id/vignanemployeeknown" />
+
+                    <TextView
+                        android:id="@+id/textView49"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Batch No. :"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/textView47"
+                        app:layout_constraintTop_toBottomOf="@+id/caste" />
+
+                    <TextView
+                        android:id="@+id/annualincome"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"                        android:layout_height="wrap_content"
+                        android:layout_marginStart="69dp"
+                        android:text=" "
+                        android:maxLines="5"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView44"
+                        app:layout_constraintStart_toEndOf="@+id/textView44" />
+
+                    <TextView
+                        android:id="@+id/familystatus"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"                        android:layout_height="wrap_content"
+                        android:layout_marginStart="78dp"
+                        android:text=" "
+                        android:maxLines="5"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView46"
+                        app:layout_constraintStart_toEndOf="@+id/textView46" />
+
+                    <TextView
+                        android:id="@+id/vignanemployeeknown"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text=" "
+                        android:maxLines="5"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView45"
+                        app:layout_constraintStart_toEndOf="@+id/textView45" />
+
+                    <TextView
+                        android:id="@+id/employeename"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"                        android:layout_height="wrap_content"
+                        android:layout_marginStart="60dp"
+                        android:text=" "
+                        android:maxLines="5"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView48"
+                        app:layout_constraintStart_toEndOf="@+id/textView48" />
+
+                    <TextView
+                        android:id="@+id/caste"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"                        android:layout_height="wrap_content"
+                        android:layout_marginStart="132dp"
+                        android:text=" "
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView47"
+                        app:layout_constraintStart_toEndOf="@+id/textView47" />
+
+                    <TextView
+                        android:id="@+id/batchno"
+                        android:layout_width="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"                        android:layout_height="wrap_content"
+                        android:layout_marginStart="105dp"
+                        android:text=" "
+                        app:layout_constraintBaseline_toBaselineOf="@+id/textView49"
+                        app:layout_constraintStart_toEndOf="@+id/textView49" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@color/white"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/batchno" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

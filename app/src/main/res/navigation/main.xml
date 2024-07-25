@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/academics"
+        android:name="com.example.myapplication.Academics"
+        android:label="Academics"
+        tools:layout="@layout/fragment_academics" />
+    <fragment
+        android:id="@+id/attendance"
+        android:name="com.example.myapplication.Attendance"
+        android:label="Attendance"
+        tools:layout="@layout/fragment_attendance" >
+        <action
+            android:id="@+id/action_attendance_to_attendance2"
+            app:destination="@id/attendance2" />
+    </fragment>
+    <fragment
+        android:id="@+id/calender"
+        android:name="com.example.myapplication.Calendar"
+        android:label="Academic Calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/Personal_Details"
+        android:name="com.example.myapplication.PersonalDetails"
+        android:label="Profile"
+        tools:layout="@layout/fragment_personal_details" />
+    <fragment
+        android:id="@+id/College_feeds"
+        android:name="com.example.myapplication.CollegeFeeds"
+        android:label="College Feeds"
+        tools:layout="@layout/fragment_college_feeds" />
+    <fragment
+        android:id="@+id/Fee_payments"
+        android:name="com.example.myapplication.FeePayment"
+        android:label="Fee Payment"
+        tools:layout="@layout/fragment_fee_payment" />
+    <fragment
+        android:id="@+id/Feedback"
+        android:name="com.example.myapplication.Feedback"
+        android:label="Feedback"
+        tools:layout="@layout/fragment_feedback" />
+    <fragment
+        android:id="@+id/ChangePass"
+        android:name="com.example.myapplication.ChangePassword"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/Logout"
+        android:name="com.example.myapplication.LogoutFragment"
+        android:label="Logging out..."
+        tools:layout="@layout/fragment_logout"
+        />
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.myapplication.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home_to_academics"
+            app:destination="@id/academics" />
+        <action
+            android:id="@+id/action_home_to_attendance"
+            app:destination="@id/attendance" />
+        <action
+            android:id="@+id/action_home_to_calender"
+            app:destination="@id/calender" />
+        <action
+            android:id="@+id/action_home_to_Personal_Details"
+            app:destination="@id/Personal_Details" />
+        <action
+            android:id="@+id/action_home_to_feeDetails"
+            app:destination="@id/feeDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/othersFragment"
+        android:name="com.example.myapplication.OthersFragment"
+        android:label="Activities"
+        tools:layout="@layout/fragment_others" />
+    <fragment
+        android:id="@+id/attendance2"
+        android:name="com.example.myapplication.Attendance2"
+        android:label="fragment_attendance2"
+        tools:layout="@layout/fragment_attendance2" />
+    <fragment
+        android:id="@+id/feeDetails"
+        android:name="com.example.myapplication.FeeDetails"
+        android:label="Fee Payment"
+        tools:layout="@layout/fragment_fee_details" />
+
+
+</navigation>

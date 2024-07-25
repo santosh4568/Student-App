@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/home"
+        android:icon="@drawable/dashboard"
+        android:title="Home"/>
+    <item android:id="@+id/academics"
+    android:icon="@drawable/acd"
+    android:title="Academics"/>
+    <item android:id="@+id/attendance"
+        android:icon="@drawable/att"
+        android:title="Attendance"/>
+    <item android:id="@+id/calender"
+        android:icon="@drawable/cal"
+        android:title="Academic Calendar"/>
+    <item android:id="@+id/Personal_Details"
+        android:icon="@drawable/id"
+        android:title="Profile"/>
+    <item android:id="@+id/College_feeds"
+        android:icon="@drawable/cf"
+        android:title="College Feeds"/>
+    <item android:id="@+id/feeDetails"
+        android:icon="@drawable/fee"
+        android:title="Fee Payments"/>
+    <item android:id="@+id/othersFragment"
+        android:icon="@drawable/others"
+        android:title="Activities"/>
+    <item android:id="@+id/ChangePass"
+        android:icon="@drawable/cp"
+        android:title="Change Password"/>
+    <item android:id="@+id/Feedback"
+        android:icon="@drawable/feed1"
+        android:title="Feedback"/>
+    <item android:id="@+id/Logout"
+        android:icon="@drawable/logout"
+        android:title="Logout"/>
+
+</menu>

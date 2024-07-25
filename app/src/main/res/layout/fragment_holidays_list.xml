@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HolidaysListFragment"
+    android:background="@color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/dsaasd">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/base_cardview"
+                style="@style/Base.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.021"
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/base_cardview"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/fixed_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="#E2EDED"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <TextView
+                            android:id="@+id/no_of_holi"
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:background="#FF5722"
+                            android:gravity="center"
+                            android:text="20"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/holi_name"
+                            android:layout_width="272dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="80dp"
+                            android:gravity="center"
+                            android:text="YEAR 2022-2023"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageButton
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#E2EDED"
+                            android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/holi_name"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <LinearLayout
+                        android:id="@+id/hidden_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/fixed_layout">
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TableRow
+                                android:background="#FF5722"
+                                >
+                                <TextView
+                                    android:text="Festivals"
+                                    android:textStyle="bold"
+
+                                    android:textColor="@color/white"
+                                    android:padding="10dp"
+                                    android:textSize="19sp"
+
+                                    android:gravity="center"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="Dates"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"
+                                    android:padding="10dp"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="New Year"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="01-01-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Bhogi"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="10-01-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Republic Day"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="26-01-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Valentine's Day"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="14-02-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:text="Rama Navami"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="10-04-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Ambedkar Jayanthi"
+                                    android:textSize="20sp"
+                                    android:gravity="center"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="14-04-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Good Friday"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="15-04-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Eid al-Fitr"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="03-05-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Eid al-Adha"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="10-06-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Independence Day"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="15-08-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Ganesh Jayanthi"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="02-10-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Dussehra"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="05-10-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Diwali"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="24-10-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+                            <TableRow>
+                                <TextView
+                                    android:text="Christmas Day"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+
+                                <TextView
+                                    android:text="25-12-2022"
+                                    android:textSize="19sp"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_weight="1"/>
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        
+
+    </ScrollView>
+
+</FrameLayout>
